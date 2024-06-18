@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    
+}
+
+
+.three-box-head{
+    width: 100%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo-box >img{
+    height: 100px;
+    margin-left:60px;
+}
+.menu-bar >a{
+  font-size: 20px;
+  color: rgb(3, 2, 2);
+  margin: 0px 1rem
+}
+.mobil-responsive-box{
+    margin-right: 28px;
+    display: none;
+}
+.slider{
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: aquamarine;
+    box-shadow: -10px 0 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.slider>a{
+    margin: 10px;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+@media only screen and (max-width : 1060px) {
+    .menu-bar>a{
+        font-size:14px;
+    }
+
+    .logo-box >img{
+        width: 63%;
+    }
+
+
+    .mobil-responsive-box {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width : 720px) {
+
+    .menu-bar>a
+    {
+        display: none;
+    }
+
+    .mobil-responsive-box {
+        display: block;
+    }
+}
+
+
